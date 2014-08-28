@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     jruby-jars (1.7.13)
-    jruby-rack (1.1.14)
+    jruby-rack (1.1.16)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
