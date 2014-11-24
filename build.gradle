@@ -18,6 +18,9 @@ dependencies {
     gems 'rubygems:rake:10.0.+'
     gems 'rubygems:colorize:0.7.3'
     gems 'rubygems:sinatra:1.4.5'
+    // Just some Java stuff to include
+    jrubyWar group: 'org.apache.kafka', name: 'kafka_2.9.2', version: '0.8.+'
+    jrubyWar group: 'log4j', name: 'log4j', version: '1.2.+', transitive: true
 }
 
 jrubyWar {
