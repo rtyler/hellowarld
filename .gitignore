@@ -1,3 +1,5 @@
 .ruby-*
 .gradle/
 build/
+*.sw*
+*.war

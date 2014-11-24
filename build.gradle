@@ -9,12 +9,23 @@ buildscript {
 
     dependencies {
         classpath group: 'com.github.jruby-gradle', name: 'jruby-gradle-war-plugin', version: '0.1.2-SNAPSHOT'
-        classpath group: 'com.github.jruby-gradle', name: 'jruby-gradle-plugin', version: '0.1.2'
+        classpath group: 'com.github.jruby-gradle', name: 'jruby-gradle-plugin', version: '0.1.9'
     }
 }
 
+dependencies {
+    gems 'rubygems:rake:10.0.+'
+    gems 'rubygems:colorize:0.7.3'
+    gems 'rubygems:sinatra:1.4.5'
+}
+
 jrubyWar {
-  include 'Rakefile'
+    webInf {
+        from 'Rakefile'
+        from 'config.ru'
+        into('app') { from 'app' }
+    }
+    webXml file('web.xml')
 }
 
 
