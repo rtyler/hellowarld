@@ -4,11 +4,10 @@ apply plugin: 'com.github.jruby-gradle.war'
 buildscript {
     repositories {
         jcenter()
-        mavenLocal()
     }
 
     dependencies {
-        classpath group: 'com.github.jruby-gradle', name: 'jruby-gradle-war-plugin', version: '0.1.2-SNAPSHOT'
+        classpath group: 'com.github.jruby-gradle', name: 'jruby-gradle-war-plugin', version: '0.1.5'
         classpath group: 'com.github.jruby-gradle', name: 'jruby-gradle-plugin', version: '0.1.9'
     }
 }
